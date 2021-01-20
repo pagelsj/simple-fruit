@@ -1,0 +1,11 @@
+@import '../../../styling/variables';
+
+.basket {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: right;
+
+  .price-total {
+    color: $color_3;
+  }
+}

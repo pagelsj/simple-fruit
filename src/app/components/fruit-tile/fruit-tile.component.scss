@@ -1,0 +1,31 @@
+@import '../../../styling/variables';
+
+.fruit-tile {
+  background: $color_1;
+
+  .banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    vertical-align: middle;
+    background: url('/assets/apple.jpg');
+    background-position: center;
+    background-size: cover;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .title {
+    font-size: 1.4rem
+  }
+  .price {
+    color: $color_3;
+    font-size: 1.4rem
+  }
+  .add-to-cart {
+    font-size: 2.5rem;
+    float:right;
+  }
+}
