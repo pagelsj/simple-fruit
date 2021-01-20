@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styling/variables';
+@import './styling/inputs';
+@import './styling/buttons';
+@import './styling/misc';
+@import './styling/tile';
+@import './styling/tables';
+@import './styling/typography';
+
+html,
+body {
+  position:relative;
+}
+body{
+  margin: 0 auto;
+  max-width: $page-width;
+  background: $color_2;
+}
