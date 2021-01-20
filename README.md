@@ -1,27 +1,32 @@
-# SimpleFruit
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
-## Development server
+# Simple Fruit
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The Simple Fruit Website was built using the Angular framework using a very simple UI styling 'framework' that built on top of the Bootstrap Grid Framework.
 
-## Code scaffolding
+I also gave myself an 1.5hr window to complete the task. However, this has taken longer than the allocated window and has taken 3hrs so far.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Building and deploying
 
-## Build
+### Install and deploy steps
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ 1. Clone the repository using git-cli.
 
-## Running unit tests
+    `git clone git@github.com:pagelsj/simple-fruit.git`
+2. Install all the needed packages using npm, or yarn.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    `npm install` or `yarn install`
+3. The project and all dependencies will now be installed and ready to run.
 
-## Running end-to-end tests
+    `ng serve`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Assumptions
+The website needed to be:
+1. Maintainable
+2. Make use of re-usable code
+3. Extendable
+4. Follow the Angular Style-guide
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Improvements
+1. I would have liked to add unit tests!
+2. The original aim was to add NGSX to the project to manage the storage and manipulate data.
