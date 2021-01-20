@@ -6,6 +6,7 @@ import {
   FruitTileComponent,
   BasketComponent
 } from '../../components/index';
+import { BasketService } from '../../services/index';
 import { HomeComponent } from './home.component';
 
 const routes: Routes = [
@@ -24,6 +25,9 @@ const routes: Routes = [
     FruitTileComponent,
     BasketComponent,
     HomeComponent
+  ],
+  providers: [
+    BasketService
   ]
 })
 export class HomePageModule{ }

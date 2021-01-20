@@ -3,11 +3,13 @@
     <!-- <img src="/assets/apple.jpg"> -->
   </div>
   <div class="content">
-    <h1 class="title">{{ fruit.title }}</h1>
+    <h1 class="title">
+      <a [href]="'/details/'+fruit.title">{{ fruit.title }}</a>
+    </h1>
     <p>{{ fruit.description }}</p>
     <p class="price">
-      £{{ fruit.price }}
-      <a class="add-to-cart icon-shopping-basket"></a>
+      {{ fruit.price | currency:'£'}}
+      <a class="add-to-cart icon-shopping-basket" (click)="addToBasket(fruit.price)"></a>
     </p>
   </div>
 </section>

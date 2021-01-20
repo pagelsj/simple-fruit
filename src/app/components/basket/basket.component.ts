@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BasketService } from '../../services/index';
 
 @Component({
   selector: 'fruit-basket',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasketComponent implements OnInit {
 
-  constructor() { }
+  basketTotal: number;
+
+  constructor(
+    private basketService: BasketService
+  ) {
+
+  }
+
 
   ngOnInit() {
+    this.basketService.basketTotal.subscribe(total => {
+      this.basketTotal = total;
+    });
   }
 
 }

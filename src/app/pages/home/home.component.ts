@@ -7,7 +7,7 @@ import { FruitInterface } from '../../interfaces/fruit.interface';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   fruitList: Array<FruitInterface> = [
     {
@@ -31,8 +31,5 @@ export class HomeComponent implements OnInit {
   ];
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
