@@ -1,14 +1,13 @@
-<section class="fruit-tile">
-  <div class="banner">
+<section class="fruit-tile tile">
+  <div class="banner" [style.backgroundImage]="'url('+fruit.image+')'">
     <!-- <img src="/assets/apple.jpg"> -->
   </div>
   <div class="content">
-    <h1 class="title">Apples</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget tempus magna, at tempor sem.</p>
-    <p class="price">£0.50
-      <span class="add-to-cart">
-        <a class="icon-shopping-basket"></a>
-      </span>
+    <h1 class="title">{{ fruit.title }}</h1>
+    <p>{{ fruit.description }}</p>
+    <p class="price">
+      £{{ fruit.price }}
+      <a class="add-to-cart icon-shopping-basket"></a>
     </p>
   </div>
 </section>

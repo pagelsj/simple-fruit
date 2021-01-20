@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input
+} from '@angular/core';
 
 @Component({
   selector: 'fruit-tile',
@@ -6,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fruit-tile.component.scss']
 })
 export class FruitTileComponent implements OnInit {
-
+  @Input() fruit;
   constructor() { }
 
   ngOnInit() {

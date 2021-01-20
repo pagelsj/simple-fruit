@@ -1,6 +1,9 @@
 @import '../../../styling/variables';
 
 .fruit-tile {
+  position: relative;
+  display: inline-block;
+  min-height: 100%;
   background: $color_1;
 
   .banner {
@@ -26,6 +29,8 @@
   }
   .add-to-cart {
     font-size: 2.5rem;
-    float:right;
+    position: absolute;
+    bottom: $padding/2;
+    right: $padding/2;
   }
 }

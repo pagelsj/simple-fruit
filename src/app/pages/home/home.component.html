@@ -1,4 +1,4 @@
-<section class="list-page">
+<section class="home-page">
   <section class="header container">
     <div class="row">
       <h1 class="col-6">Simple Fruit</h1>
@@ -10,14 +10,8 @@
 
   <section class="container">
     <div class="row">
-      <div class="col-4">
-        <fruit-tile class="tile"></fruit-tile>
-      </div>
-      <div class="col-4">
-        <fruit-tile class="tile"></fruit-tile>
-      </div>
-      <div class="col-4">
-        <fruit-tile class="tile"></fruit-tile>
+      <div class="col-4" *ngFor="let fruit of fruitList">
+        <fruit-tile class="" [fruit]="fruit"></fruit-tile>
       </div>
     </div>
   </section>
